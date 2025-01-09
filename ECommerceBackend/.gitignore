@@ -1,0 +1,42 @@
+## .NET Core
+bin/
+obj/
+*.user
+*.userosscache
+*.suo
+*.dbmdl
+*.jfm
+*.log
+
+## Visual Studio
+.vs/
+*.ncrunch*
+*.dotCover
+
+## Rider
+.idea/
+
+## Environment Files
+appsettings.Development.json
+appsettings.Production.json
+
+## Logs
+logs/
+
+## Database
+*.db
+*.db-shm
+*.db-wal
+
+## Test Results
+TestResults/
+[Cc]overage/
+coverage.json
+coverage.cobertura.xml
+
+## Misc
+.DS_Store
+Thumbs.db
+Desktop.ini
+node_modules/
+.env 
