@@ -4,7 +4,7 @@ Clean Architecture prensiplerine uygun olarak geliştirilmiş bir e-ticaret back
 
 ## 🏗️ Teknolojiler
 
-### Teknolojiler
+### Mevcut Teknolojiler
 - **.NET 8**
 - **Entity Framework Core** - ORM ve veritabanı işlemleri için
 - **PostgreSQL** - Ana veritabanı
@@ -13,6 +13,8 @@ Clean Architecture prensiplerine uygun olarak geliştirilmiş bir e-ticaret back
 - **FluentValidation** - Validasyon kuralları için
 - **Serilog** - Yapılandırılabilir loglama için
 - **Swagger** - API dokümantasyonu için
+
+### Eklenecek Teknolojiler
 - **Redis** - Caching için
 - **RabbitMQ** - Message broker için
 - **Elasticsearch** - Logging ve arama işlemleri için
