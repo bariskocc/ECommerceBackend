@@ -1,5 +1,6 @@
 using ECommerceBackend.Application.Features.Products.Commands.CreateProduct;
 using ECommerceBackend.Application.Features.Products.Dtos;
+using ECommerceBackend.Application.Features.Queries;
 using ECommerceBackend.Application.Interfaces;
 using ECommerceBackend.Domain.Entities;
 using MediatR;
@@ -31,12 +32,9 @@ public class ProductsController : ControllerBase
     [HttpGet("{id}")]
     public async Task<ActionResult<ProductDto>> GetProduct(Guid id)
     {
-        var product = await _productRepository.GetByIdAsync(id);
-        if (product == null)
-        {
-            return NotFound();
-        }
-        return Ok(product);
+        var query = new GetProductQuery(id);
+        var productDto = await _mediator.Send(query);
+        return Ok(productDto);
     }
 
     [HttpPost]
